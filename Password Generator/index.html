@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div id="header">
+                <h1 id="title">Generate a <span id="green-font">random password </span></h1>
+                <p id="message">Never use a insecure password again.</p>
+                <div class="generate-btn">
+                <button onclick="generate()"><span id="span-icon"></span> Generate passwords</button>
+                <labe>Length: </labe><input type="text" value="15" id="length-input" maxlength="2" >
+                </div>
+                
+            </div>
+            <hr>
+            <div id="passwords">
+                <input type="text" onClick="copyPassword(firstInput)" id="first-left-input" class="left-input" readonly></input>
+                <input type="text" onClick="copyPassword(secondInput)" id="first-right-input" class="right-input" readonly >
+                <input type="text" onClick="copyPassword(thirdInput)" id="second-left-input" class="left-input"  readonly>
+                <input type="text" id="second-right-input" onClick="copyPassword(fourthInput)" class="right-input" readonly>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
